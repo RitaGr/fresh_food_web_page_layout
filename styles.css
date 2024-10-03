@@ -30,6 +30,11 @@ nav{
 #logo-letter{
     color: var(--main-color);
 }
+#icons-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
 #menu{
     color: var(--main-color);
     text-transform: uppercase;
@@ -49,6 +54,26 @@ nav{
 }
 #icons-menu{
     margin-right: 72px;
+    line-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#icons-menu li i{
+    color: var(--border-color);
+    padding: 24px;
+}
+#shopping-cart-icon{
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    line-height: 74px;
+}
+#icons-menu #shopping-cart-icon i{
+    color: #D62828;
+}
+#icons-menu #menu-icon{
+    color: var(--main-color);
 }
 #landing-page{
     background-image: url("./pictures/main_photo.jpg");
