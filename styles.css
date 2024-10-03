@@ -2,12 +2,20 @@
     --main-color: #876A95;
     --border-color: #474A48;
     --main-text-color: #FBFFFE;
+    --sub-section-color: #EAEAEB;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+*::-webkit-scrollbar{
+    display: none;
 }
 header{
     display: flex;
@@ -83,6 +91,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 #main-page-text{
     color: var(--main-text-color);
@@ -136,4 +145,124 @@ nav{
     text-transform: uppercase;
     padding-left: 12px;
     padding-right: 12px;
+}
+
+/* sales section */
+#sales-sec{
+    height: 60vh;
+    width: 100vw;
+    background-color: var(--sub-section-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+}
+.sale-box{
+    height: 320px;
+    width: 560px;
+    padding: 50px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sales-sec .sale-box img{
+    height: 240px;
+    align-items: right;
+}
+.sale-box h2,h3,button{
+    text-transform: uppercase;
+}
+.sale-box button{
+    border: transparent;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 48px;
+    font-weight: 600;
+}
+.sale-box p{
+    padding-top: 12px;
+}
+#green-sale-box h2{
+    color: #FDBA18;
+}
+#green-sale-box button{
+    color: #FDBA18; 
+}
+#green-sale-box h3{
+    font-size: 32px;
+}
+#green-sale-box{
+    background-color: #876A95;
+    margin-right: 48px;
+}
+#yellow-sale-box{
+    background-color: #FFC72C;
+}
+#yellow-sale-box h2,button{
+    color: #603578;
+}
+#yellow-sale-box h3{
+    font-size: 32px;
+}
+
+/* Bestseller sec */
+#bestseller-sec{
+    height: 70vh;
+    background-color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bestseller-sec h1{
+    font-size: 48px;
+    text-transform: uppercase;
+}
+#p-box{
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    padding: 10px 26px;
+    color: var(--main-text-color);
+}
+#bestseller-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bestseller-item-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.bestseller-item-box h3{
+    text-transform: none;
+    margin-bottom: 12px;
+}
+.bestseller-item-box p{
+    font-weight: 600;
+}
+.bestseller-item-box img{
+    height: 240px;
+    max-width: 240px;
+    padding: 24px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 24px;
+}
+.rating i{
+    color: var(--main-color);
+}
+.rating{
+    margin-bottom: 12px;
+}
+
+/* Deal of the Week Section */
+
+#deal-of-week-sec{
+    height: 90vh;
+    width: 100vw;
+    background-image: url("./pictures/deal-of-week.jpg");
+    background-size: cover;
 }
