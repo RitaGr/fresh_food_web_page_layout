@@ -133,6 +133,7 @@ nav{
     width: 1024px;
     padding: 24px 48px;
     margin-top: 240px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #landing-page-product-box img{
     height: 120px;
@@ -265,4 +266,46 @@ nav{
     width: 100vw;
     background-image: url("./pictures/deal-of-week.jpg");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#deal-of-week-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-text-color);
+    width: 1200px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    margin-top: 360px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#deal-of-week-container .bestseller-item-box img{
+    height: 260px;
+}
+.discount{
+    text-decoration: line-through;
+}
+#deal-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    margin-top: 360px;
+}
+#deal-paragraph h2{
+    font-size: 64px;
+}
+#deal-paragraph h1{
+    font-size: 98px;
+}
+#deal-paragraph p{
+    text-transform: none;
+    font-weight: 600;
+    font-size: 36px;
 }
