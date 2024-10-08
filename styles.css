@@ -309,3 +309,12 @@ nav{
     font-weight: 600;
     font-size: 36px;
 }
+
+/* Customers section */
+#customers-sec{
+    height: 100vh;
+    background-color: var(--sub-section-color);
+}
+#customers-container{
+    background-color: var(--main-text-color);
+}
