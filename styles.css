@@ -314,7 +314,104 @@ nav{
 #customers-sec{
     height: 100vh;
     background-color: var(--sub-section-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #customers-container{
     background-color: var(--main-text-color);
+    height: 800px;
+    width: 1200px;
+    margin-top: 480px;
+    padding-top: 48px;
 }
+#customers-container img{
+    border-radius: 48px 48px;
+    height: 240px;
+    width: 278px;
+}
+#customers-container p{
+    font-size: 20px;
+    padding: 48px 280px;
+}
+#customers-container i{
+    font-size: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--border-color);
+}
+.customer-comment-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#less-than{
+    border-right: 2px solid var(--border-color);
+    padding: 0 12px;
+}
+#greater-than{
+    border-left: 2px solid var(--border-color);
+    padding:0  12px;
+}
+#scale-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 98px;
+}
+#green-scale{
+    background-color: green;
+    border-radius: 50px;
+    width: 36px;
+    height: 12px;
+}
+.grey-dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: grey;
+}
+#scale-bar span{
+    margin: 2px;
+}
+
+/* Latest News Section */
+#latest-news-sec{
+    height: 80vh;
+    background-color: var(--sub-section-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Delivery Section */
+.delivery-sec{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+.delivery-sec::before {
+    content: "";
+    background-image: url("./pictures/delivery-sec.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+h1{
+    position: relative; 
+}
+
